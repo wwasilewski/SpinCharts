@@ -27,6 +27,10 @@ public class SpinCharts extends Application {
             SpinChartsController spinCC = new SpinChartsController();
             spinCC.closeProgram();
         });
+        primaryStage.setHeight(800d);
+        primaryStage.setWidth(1000d);
+        primaryStage.setMinHeight(600d);
+        primaryStage.setMinWidth(800d);
         primaryStage.setScene(scene);
         primaryStage.setTitle("SpinCharts");
         primaryStage.show();
