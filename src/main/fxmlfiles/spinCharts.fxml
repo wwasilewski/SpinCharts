@@ -21,19 +21,20 @@
                 </Menu>
             </menus>
         </MenuBar>
-        <TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+        <TableView fx:id="tableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity"
                    prefHeight="331.0" prefWidth="868.0" StackPane.alignment="TOP_LEFT">
             <columns>
-                <TableColumn prefWidth="67.99999463558197" sortable="false" text="BTN"/>
-                <TableColumn prefWidth="102.40003204345703" sortable="false" text="SB vs BTN Limp"/>
-                <TableColumn prefWidth="76.00001525878906" sortable="false" text="SB vs BTN"/>
-                <TableColumn prefWidth="72.79998779296875" sortable="false" text="SB vs BB"/>
-                <TableColumn prefWidth="84.0" sortable="false" text="BB vs BTN"/>
-                <TableColumn prefWidth="102.4000244140625" sortable="false" text="BB vs BTN Limp"/>
-                <TableColumn prefWidth="84.80001831054688" sortable="false" text="BB vs 2pp"/>
-                <TableColumn prefWidth="101.5999755859375" sortable="false" text="BB vs 2pp Limp"/>
-                <TableColumn prefWidth="75.2000732421875" sortable="false" text="BB vs SB"/>
-                <TableColumn prefWidth="108.7999267578125" sortable="false" text="BB vs SB Limp"/>
+                <TableColumn fx:id="btn" prefWidth="67.99999463558197" sortable="false" text="BTN"/>
+                <TableColumn fx:id="sBvsBtnLimp" prefWidth="102.40003204345703" sortable="false" text="SB vs BTN Limp"/>
+                <TableColumn fx:id="sBvsBtn" prefWidth="76.00001525878906" sortable="false" text="SB vs BTN"/>
+                <TableColumn fx:id="sBvsBB" prefWidth="72.79998779296875" sortable="false" text="SB vs BB"/>
+                <TableColumn fx:id="bBvsBtn" prefWidth="84.0" sortable="false" text="BB vs BTN"/>
+                <TableColumn fx:id="bBvsBtnLimp" prefWidth="102.4000244140625" sortable="false" text="BB vs BTN Limp"/>
+                <TableColumn fx:id="bBvs2pp" prefWidth="84.80001831054688" sortable="false" text="BB vs 2pp"/>
+                <TableColumn fx:id="bBvs2ppLimp" prefWidth="101.5999755859375" sortable="false" text="BB vs 2pp Limp"/>
+                <TableColumn fx:id="bBvsSB" prefWidth="75.2000732421875" sortable="false" text="BB vs SB"/>
+                <TableColumn fx:id="bBvsSBLimp" prefWidth="108.7999267578125" sortable="false" text="BB vs SB Limp"/>
             </columns>
             <StackPane.margin>
                 <Insets left="50.0" right="50.0" top="50.0"/>
