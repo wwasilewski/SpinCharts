@@ -78,10 +78,28 @@ public class SpinChartsController implements Initializable {
     //metoda dodajaca dane do tabeli wierszami
     public ObservableList<TableValues> getDataForTheTable() {
         ObservableList<TableValues> rowsValues = FXCollections.observableArrayList();
-        rowsValues.add(new TableValues("1", "2", "3", "", "", "4",
-                "5", "6", "", "7"));
-        rowsValues.add(new TableValues("2", "2", "3", "", "", "4",
-                "5", "4", "", "5"));
+        rowsValues.add(new TableValues("", "", "vs AI", "", "vs AI", "",
+                "vs AI", "", "vs AI", ""));
+        rowsValues.add(new TableValues("25+", "", "", "", "", "",
+                "", "", "25+", "25+"));
+        rowsValues.add(new TableValues("20-25", "20+", "20+", "20+", "20+", "20+",
+                "20+", "20+", "20-25", "20-25"));
+        rowsValues.add(new TableValues("16-20", "16-20", "16-20", "16-20", "16-20", "16-20",
+                "16-20", "16-20", "16-20", "16-20"));
+        rowsValues.add(new TableValues("13-16", "13-16", "13-16", "13-16", "13-16", "13-16",
+                "13-16", "13-16", "13-16", "13-16"));
+        rowsValues.add(new TableValues("10-13", "10-13", "10-13", "10-13", "10-13", "10-13",
+                "10-13", "10-13", "10-13", "10-13"));
+        rowsValues.add(new TableValues("9", "8-10", "", "8-10", "8-10", "8-10",
+                "8-10", "8-10", "8-10", "8-10"));
+        rowsValues.add(new TableValues("8", "6-8", "", "6-8", "vs 3x 20-25", "",
+                "", "", "vs 2.5x-3x 20-25", "6-8"));
+        rowsValues.add(new TableValues("<8", "", "", "4-6", "", "",
+                "", "", "", "4-6"));
+        rowsValues.add(new TableValues("", "", "", "", "", "",
+                "", "", "", ""));
+        rowsValues.add(new TableValues("ODDS", "", "", "", "", "",
+                "", "", "", ""));
 
         return rowsValues;
     }
@@ -91,3 +109,26 @@ public class SpinChartsController implements Initializable {
         System.exit(0);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
