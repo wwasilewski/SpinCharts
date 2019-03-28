@@ -9,109 +9,109 @@ import javafx.beans.property.SimpleStringProperty;
 public class TableValues {
 
     //uzywam SimpleStringProperty do TableView bo ma listenery i moge potem z tym cos zrobic
-    private SimpleStringProperty Btn;
-    private SimpleStringProperty SBvsBtnLimp;
-    private SimpleStringProperty SBvsBtn;
-    private SimpleStringProperty SBvsBB;
-    private SimpleStringProperty BBvsBtn;
-    private SimpleStringProperty BBvsBtnLimp;
-    private SimpleStringProperty BBvs2pp;
-    private SimpleStringProperty BBvs2ppLimp;
-    private SimpleStringProperty BBvsSB;
-    private SimpleStringProperty BBvsSBLimp;
+    private SimpleStringProperty btn;
+    private SimpleStringProperty sbvsBtnLimp;
+    private SimpleStringProperty sbvsBtn;
+    private SimpleStringProperty sbvsBB;
+    private SimpleStringProperty bbvsBtn;
+    private SimpleStringProperty bbvsBtnLimp;
+    private SimpleStringProperty bbvs2pp;
+    private SimpleStringProperty bbvs2ppLimp;
+    private SimpleStringProperty bbvsSB;
+    private SimpleStringProperty bbvsSBLimp;
 
     //taki konstruktor by bylo latwiej, beda podawane Stringi a on bedzie sobie sam zamienial
-    public TableValues(String btn, String SBvsBtnLimp, String SBvsBtn, String SBvsBB, String BBvsBtn,
-                       String BBvsBtnLimp, String BBvs2pp, String BBvs2ppLimp, String BBvsSB, String BBvsSBLimp) {
-        this.Btn = new SimpleStringProperty(btn);
-        this.SBvsBtnLimp = new SimpleStringProperty(SBvsBtnLimp);
-        this.SBvsBtn = new SimpleStringProperty(SBvsBtn);
-        this.SBvsBB = new SimpleStringProperty(SBvsBB);
-        this.BBvsBtn = new SimpleStringProperty(BBvsBtn);
-        this.BBvsBtnLimp = new SimpleStringProperty(BBvsBtnLimp);
-        this.BBvs2pp = new SimpleStringProperty(BBvs2pp);
-        this.BBvs2ppLimp = new SimpleStringProperty(BBvs2ppLimp);
-        this.BBvsSB = new SimpleStringProperty(BBvsSB);
-        this.BBvsSBLimp = new SimpleStringProperty(BBvsSBLimp);
+    public TableValues(String btn, String sbvsBtnLimp, String sbvsBtn, String sbvsBB, String bbvsBtn,
+                       String bbvsBtnLimp, String bbvs2pp, String bbvs2ppLimp, String bbvsSB, String bbvsSBLimp) {
+        this.btn = new SimpleStringProperty(btn);
+        this.sbvsBtnLimp = new SimpleStringProperty(sbvsBtnLimp);
+        this.sbvsBtn = new SimpleStringProperty(sbvsBtn);
+        this.sbvsBB = new SimpleStringProperty(sbvsBB);
+        this.bbvsBtn = new SimpleStringProperty(bbvsBtn);
+        this.bbvsBtnLimp = new SimpleStringProperty(bbvsBtnLimp);
+        this.bbvs2pp = new SimpleStringProperty(bbvs2pp);
+        this.bbvs2ppLimp = new SimpleStringProperty(bbvs2ppLimp);
+        this.bbvsSB = new SimpleStringProperty(bbvsSB);
+        this.bbvsSBLimp = new SimpleStringProperty(bbvsSBLimp);
     }
 
     public String getBtn() {
-        return Btn.get();
+        return btn.get();
     }
 
     public void setBtn(String btn) {
-        this.Btn.set(btn);
+        this.btn.set(btn);
     }
 
-    public String getSBvsBtnLimp() {
-        return SBvsBtnLimp.get();
+    public String getSbvsBtnLimp() {
+        return sbvsBtnLimp.get();
     }
 
-    public void setSBvsBtnLimp(String SBvsBTNLimp) {
-        this.SBvsBtnLimp.set(SBvsBTNLimp);
+    public void setSbvsBtnLimp(String SBvsBTNLimp) {
+        this.sbvsBtnLimp.set(SBvsBTNLimp);
     }
 
-    public String getSBvsBtn() {
-        return SBvsBtn.get();
+    public String getSbvsBtn() {
+        return sbvsBtn.get();
     }
 
-    public void setSBvsBtn(String SBvsBtn) {
-        this.SBvsBtn.set(SBvsBtn);
+    public void setSbvsBtn(String SBvsBtn) {
+        this.sbvsBtn.set(SBvsBtn);
     }
 
-    public String getSBvsBB() {
-        return SBvsBB.get();
+    public String getSbvsBB() {
+        return sbvsBB.get();
     }
 
-    public void setSBvsBB(String SBvsBB) {
-        this.SBvsBB.set(SBvsBB);
+    public void setSbvsBB(String SBvsBB) {
+        this.sbvsBB.set(SBvsBB);
     }
 
-    public String getBBvsBtn() {
-        return BBvsBtn.get();
+    public String getBbvsBtn() {
+        return bbvsBtn.get();
     }
 
-    public void setBBvsBtn(String BBvsBtn) {
-        this.BBvsBtn.set(BBvsBtn);
+    public void setBbvsBtn(String BBvsBtn) {
+        this.bbvsBtn.set(BBvsBtn);
     }
 
-    public String getBBvsBtnLimp() {
-        return BBvsBtnLimp.get();
+    public String getBbvsBtnLimp() {
+        return bbvsBtnLimp.get();
     }
 
-    public void setBBvsBtnLimp(String BBvsBtnLimp) {
-        this.BBvsBtnLimp.set(BBvsBtnLimp);
+    public void setBbvsBtnLimp(String BBvsBtnLimp) {
+        this.bbvsBtnLimp.set(BBvsBtnLimp);
     }
 
-    public String getBBvs2pp() {
-        return BBvs2pp.get();
+    public String getBbvs2pp() {
+        return bbvs2pp.get();
     }
 
-    public void setBBvs2pp(String BBvs2pp) {
-        this.BBvs2pp.set(BBvs2pp);
+    public void setBbvs2pp(String BBvs2pp) {
+        this.bbvs2pp.set(BBvs2pp);
     }
 
-    public String getBBvs2ppLimp() {
-        return BBvs2ppLimp.get();
+    public String getBbvs2ppLimp() {
+        return bbvs2ppLimp.get();
     }
 
-    public void setBBvs2ppLimp(String BBvs2ppLimp) {
-        this.BBvs2ppLimp.set(BBvs2ppLimp);
+    public void setBbvs2ppLimp(String BBvs2ppLimp) {
+        this.bbvs2ppLimp.set(BBvs2ppLimp);
     }
 
-    public String getBBvsSB() {
-        return BBvsSB.get();
+    public String getBbvsSB() {
+        return bbvsSB.get();
     }
 
-    public void setBBvsSB(String BBvsSB) {
-        this.BBvsSB.set(BBvsSB);
+    public void setBbvsSB(String BBvsSB) {
+        this.bbvsSB.set(BBvsSB);
     }
 
-    public String getBBvsSBLimp() {
-        return BBvsSBLimp.get();
+    public String getBbvsSBLimp() {
+        return bbvsSBLimp.get();
     }
 
-    public void setBBvsSBLimp(String BBvsSBLimp) {
-        this.BBvsSBLimp.set(BBvsSBLimp);
+    public void setBbvsSBLimp(String BBvsSBLimp) {
+        this.bbvsSBLimp.set(BBvsSBLimp);
     }
 }
