@@ -2,8 +2,9 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.StackPane?>
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0"
            prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
            fx:controller="main.SpinChartsController">
     <children>
@@ -21,9 +22,8 @@
                 </Menu>
             </menus>
         </MenuBar>
-        <TableView fx:id="tableView" maxHeight="-Infinity" maxWidth="-Infinity"
-                   minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="884.0"
-                   StackPane.alignment="TOP_LEFT">
+        <TableView fx:id="tableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="319.0" prefWidth="884.0" StackPane.alignment="TOP_LEFT">
             <columns>
                 <TableColumn fx:id="btn" prefWidth="67.99999463558197" sortable="false" text="BTN"/>
                 <TableColumn fx:id="sbvsBtnLimp" prefWidth="102.40003204345703" sortable="false" text="SB vs BTN Limp"/>
@@ -37,8 +37,20 @@
                 <TableColumn fx:id="bbvsSBLimp" prefWidth="108.800048828125" sortable="false" text="BB vs SB Limp"/>
             </columns>
             <StackPane.margin>
-                <Insets left="50.0" right="50.0" top="50.0"/>
+                <Insets left="50.0" right="50.0" top="30.0"/>
             </StackPane.margin>
         </TableView>
+        <ImageView fx:id="imageview1" fitHeight="336.0" fitWidth="438.0" pickOnBounds="true" preserveRatio="true"
+                   StackPane.alignment="BOTTOM_LEFT">
+            <StackPane.margin>
+                <Insets bottom="10.0" left="50.0"/>
+            </StackPane.margin>
+        </ImageView>
+        <ImageView fx:id="imageview2" fitHeight="194.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true"
+                   StackPane.alignment="BOTTOM_RIGHT">
+            <StackPane.margin>
+                <Insets bottom="160.0" right="280.0"/>
+            </StackPane.margin>
+        </ImageView>
     </children>
 </StackPane>
