@@ -292,8 +292,42 @@ public class SpinChartsController implements Initializable {
                     setText(item);
                     setCursor(Cursor.HAND);
                     setOnMouseClicked(event -> {
-                        System.out.println("Clicked on " + item);
-                        //tu co robic na klik
+                        if ("vs AI".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtn/vs_btn_vs_ai.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtn/leg_blank.png");
+                            imageview2.setImage(image2);
+                        } else if ("20+".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtn/vs_btn_20+.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtn/legendvsmnr.png");
+                            imageview2.setImage(image2);
+                        } else if ("16-20".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtn/vs_btn_16-20.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtn/legendvsmnr.png");
+                            imageview2.setImage(image2);
+                        } else if ("13-16".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtn/vs_btn_13-16.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtn/legendvsmnr.png");
+                            imageview2.setImage(image2);
+                        } else if ("10-13".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtn/vs_btn_10-13.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtn/legendvsmnr.png");
+                            imageview2.setImage(image2);
+                        } else if ("8-10".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtn/vs_btn_8-10.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtn/legendvsmnr.png");
+                            imageview2.setImage(image2);
+                        } else {
+                            Image image1 = new Image("main/charts_images/bbvsbtn/vs_btn_vs_3x_20-25.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtn/legendvsmnr.png");
+                            imageview2.setImage(image2);
+                        }
                     });
                 }
             }
