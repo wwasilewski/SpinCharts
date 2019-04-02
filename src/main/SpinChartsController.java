@@ -74,7 +74,6 @@ public class SpinChartsController implements Initializable {
 
         //kod do tworzenia komorek w kolumnach i ustawienia listenera
         btn.setCellFactory(param -> new TableCell<TableValues, String>() {
-
             @Override
             public void updateItem(String item, boolean empty) {
                 super.updateItem(item, empty);
@@ -149,8 +148,37 @@ public class SpinChartsController implements Initializable {
                     setText(item);
                     setCursor(Cursor.HAND);
                     setOnMouseClicked(event -> {
-                        System.out.println("Clicked on " + item);
-                        //tu co robic na klik
+                        if ("20+".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbtnlimp/vs_btn_limp_20+.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbtnlimp/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("16-20".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbtnlimp/vs_btn_limp_16-20.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbtnlimp/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("13-16".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbtnlimp/vs_btn_limp_13-16.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbtnlimp/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("10-13".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbtnlimp/vs_btn_limp_10-13.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbtnlimp/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("8-10".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbtnlimp/vs_btn_limp_8-10.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbtnlimp/leg2.png");
+                            imageview2.setImage(image2);
+                        } else {
+                            Image image1 = new Image("main/charts_images/sbvsbtnlimp/vs_btn_limp_6-8.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbtnlimp/leg2.png");
+                            imageview2.setImage(image2);
+                        }
                     });
                 }
             }
