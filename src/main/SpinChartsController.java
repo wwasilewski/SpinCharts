@@ -345,8 +345,32 @@ public class SpinChartsController implements Initializable {
                     setText(item);
                     setCursor(Cursor.HAND);
                     setOnMouseClicked(event -> {
-                        System.out.println("Clicked on " + item);
-                        //tu co robic na klik
+                        if ("20+".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtnlimp/vs_btn_l_20+.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtnlimp/legiso.png");
+                            imageview2.setImage(image2);
+                        } else if ("16-20".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtnlimp/vs_btn_l_16-20.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtnlimp/legiso.png");
+                            imageview2.setImage(image2);
+                        } else if ("13-16".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtnlimp/vs_btn_l_13-16.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtnlimp/legiso.png");
+                            imageview2.setImage(image2);
+                        } else if ("10-13".equals(item)) {
+                            Image image1 = new Image("main/charts_images/bbvsbtnlimp/vs_btn_l_10-13.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtnlimp/legiso.png");
+                            imageview2.setImage(image2);
+                        } else {
+                            Image image1 = new Image("main/charts_images/bbvsbtnlimp/vs_btn_l_8-10.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/bbvsbtnlimp/legiso.png");
+                            imageview2.setImage(image2);
+                        }
                     });
                 }
             }
