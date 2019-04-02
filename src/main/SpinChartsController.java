@@ -239,8 +239,42 @@ public class SpinChartsController implements Initializable {
                     setText(item);
                     setCursor(Cursor.HAND);
                     setOnMouseClicked(event -> {
-                        System.out.println("Clicked on " + item);
-                        //tu co robic na klik
+                        if ("20+".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbb/vs_bb_20+.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbb/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("16-20".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbb/vs_bb_16-20.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbb/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("13-16".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbb/vs_bb_13-16.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbb/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("10-13".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbb/vs_bb_10-13.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbb/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("8-10".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbb/vs_bb_8-10.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbb/leg2.png");
+                            imageview2.setImage(image2);
+                        } else if ("6-8".equals(item)) {
+                            Image image1 = new Image("main/charts_images/sbvsbb/vs_bb_6-8.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbb/leg2.png");
+                            imageview2.setImage(image2);
+                        } else {
+                            Image image1 = new Image("main/charts_images/sbvsbb/vs_bb_4-6.png");
+                            imageview1.setImage(image1);
+                            Image image2 = new Image("main/charts_images/sbvsbb/leg2.png");
+                            imageview2.setImage(image2);
+                        }
                     });
                 }
             }
