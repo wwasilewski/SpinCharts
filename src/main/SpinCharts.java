@@ -22,7 +22,7 @@ public class SpinCharts extends Application {
         StackPane stackPane = loader.load();
         Scene scene = new Scene(stackPane);
 
-        primaryStage.getIcons().add(new Image("main/diamond.png"));
+        primaryStage.getIcons().add(new Image("main/images/diamond.png"));
         primaryStage.setOnCloseRequest(event -> {
             SpinChartsController spinCC = new SpinChartsController();
             spinCC.closeProgram();
